@@ -21,7 +21,7 @@ module.exports = {
     networks: {
         localnet: {
             chainId: 31415926,
-            url: "http://127.0.0.1:1234/rpc/v1",
+            url: "hthttps://fictional-yodel-vrqw6qqpj72prww.github.dev/tp://127.0.0.1:1234/rpc/v1",
             accounts: [PRIVATE_KEY],
         },
         calibrationnet: {
@@ -34,6 +34,12 @@ module.exports = {
             url: "https://api.node.glif.io",
             accounts: [PRIVATE_KEY],
         },
+        bsctestnet: {
+            url: "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+            chainId: 97,
+            gasPrice: 20000000000,
+            accounts: [PRIVATE_KEY]
+        }
     },
     paths: {
         sources: "./contracts",
